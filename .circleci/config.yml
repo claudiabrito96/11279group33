@@ -4,6 +4,16 @@ version: 2.1
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
+  basic-build:
+    docker:
+      - image: cimg/base:stable
+    
+    steps:
+      - checkout
+      - run:
+          name: "sdf"
+          command: "npm install [--package-lock-only]; npm run"
+
   say-hello:
     # Specify the execution environment.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
@@ -22,3 +32,6 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+  test-workflow:
+    jobs:
+      - basic-build
