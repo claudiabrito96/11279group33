@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
+import { MyButton } from './Button';
+import { Button } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -48,7 +49,9 @@ function Navbar() {
                         </li>
                     
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                    {button && <MyButton buttonStyle='btn--outline'>SIGN IN</MyButton>}
+                    <Button as={Link} to='/register'>SIGN UP</Button>
+                    <Button as={Link} to='/devices'>DEVICES</Button>
                 </div>
             </nav>
         </>
