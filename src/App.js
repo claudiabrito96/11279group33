@@ -6,6 +6,7 @@ import LogIn from './Pages/LogIn';
 import Contact from './Pages/Contact';
 import Footer from './Components/Footer';
 
+
 const App = () =>{  
   
   return(
