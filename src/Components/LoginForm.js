@@ -1,6 +1,7 @@
 import React from 'react';
 
 class LogIn extends React.Component{
+    
     state={
         email: ' ',
         pwd: ' '
@@ -22,7 +23,7 @@ class LogIn extends React.Component{
                     <input type='email' name='email' placeholder='email' required onChange={this.handleChange}/>
                     </div>
                     <div>
-                    <input type='password' name='pwd' placeholder='password' required oncChange={this.handleChange}/>
+                    <input type='password' name='pwd' placeholder='password' required onChange={this.handleChange}/>
                     </div>
                     <button onSubmit={this.handleSubmit}>Log In</button>
                 </form> 
