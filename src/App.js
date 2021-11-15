@@ -9,27 +9,44 @@ import Register from './Pages/Register';
 import LineChart from './Pages/LineChart';
 import Devices from './Pages/Devices';
 import searchBar from './Pages/searchBar';
+import ElectronicDevices from './Components/ElectronicDevices';
+import { Component } from 'react';
 
 
+class App extends Component{  
+  
+  constructor(props) {
+    super(props);
+    this.state = { apiResponse: "" };
+}
 
-function App (){  
+callAPI() {
+    fetch("http://localhost:9000/testAPI")
+        .then(res => res.text())
+        .then(res => this.setState({ apiResponse: res }));
+}
 
-
-  return(
-    <>
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route path='/' exact component= {LineChart} />
-          <Route path='/sign-up' exact component= {searchBar} />
-          <Route path= '/contact-us' exact component= {Devices} />
-          <Route path= '/register' exact component= {Register} />
-        </Switch>
-
-        <Footer />
-      </Router>
-    </>
-  );
+componentWillMount() {
+    this.callAPI();
+}
+  render() {
+    return(
+      <>
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route path='/' exact component= {LineChart} />
+            <Route path='/sign-up' exact component= {searchBar} />
+            <Route path= '/contact-us' exact component= {Devices} />
+            <Route path= '/register' exact component= {Register} />
+            <Route path='/devices' exact component={ElectronicDevices} />
+          </Switch>
+          <p className="App-intro">;{this.state.apiResponse}</p>
+          <Footer />
+        </Router>
+      </>
+    );
+  }
 }
 
 export default App;
