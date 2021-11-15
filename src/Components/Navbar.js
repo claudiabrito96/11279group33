@@ -52,6 +52,7 @@ function Navbar() {
                     {button && <MyButton buttonStyle='btn--outline'>SIGN IN</MyButton>}
                     <Button as={Link} to='/register'>SIGN UP</Button>
                     <Button as={Link} to='/devices'>DEVICES</Button>
+                    <Button as={Link} to='/friends'>FRIENDS</Button>
                 </div>
             </nav>
         </>

@@ -8,6 +8,7 @@ import Footer from './Components/Footer';
 import Register from './Pages/Register';
 import ElectronicDevices from './Components/ElectronicDevices';
 import { Component } from 'react';
+import Friends from './Pages/Friends';
 
 
 class App extends Component{  
@@ -37,6 +38,7 @@ componentWillMount() {
             <Route path= '/contact-us' exact component= {Contact} />
             <Route path='/register' exact component= {Register} />
             <Route path='/devices' exact component={ElectronicDevices} />
+            <Route path='/friends' exact component={Friends} />
           </Switch>
           <p className="App-intro">;{this.state.apiResponse}</p>
           <Footer />
