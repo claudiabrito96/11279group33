@@ -11,4 +11,7 @@ Create a personal branch: `git checkout -b <branchname>` <br /> (Create a new br
 Add the files to the branch: `git add <file_name>` (to add a NEW file to branch) OR `git add .` (to update ALL files in branch) <br /> (Recomended to do everytime you work on the project. It will update your branch with your new changes)
 Commit to the branch: `git commit -m "Your message"` <br /> (Commit changes to your local branch)
 Push the commit to your remote branch: `git push --set-upstream origin <branch_name>` <br /> ( Do after commit to push to the remote branch)
+Install the necessary npm packages: `npm install` 
+Install Semantic UI: `npm install semantic-ui --save`
+Install Chart.js: `npm install chart.js`
 Run updated project: `npm start` 
