@@ -1,0 +1,30 @@
+
+.searchB {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.searchB input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+}
+   
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid #c5bbbb;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #a59f9f;
+}
+

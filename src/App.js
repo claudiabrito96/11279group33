@@ -9,6 +9,7 @@ import Register from './Pages/Register';
 import LineChart from './Pages/LineChart';
 import Devices from './Pages/Devices';
 import searchBar from './Pages/searchBar';
+import friends from './Pages/Friends';
 import ElectronicDevices from './Components/ElectronicDevices';
 import { Component } from 'react';
 
@@ -36,10 +37,10 @@ componentWillMount() {
           <Navbar />
           <Switch>
             <Route path='/' exact component= {LineChart} />
-            <Route path='/sign-up' exact component= {searchBar} />
             <Route path= '/contact-us' exact component= {Devices} />
-            <Route path= '/register' exact component= {Register} />
-            <Route path='/devices' exact component={ElectronicDevices} />
+            <Route path='/sign-up' exact component= {searchBar} />
+            <Route path= '/register' exact component= {friends} />
+          
           </Switch>
           <p className="App-intro">;{this.state.apiResponse}</p>
           <Footer />
