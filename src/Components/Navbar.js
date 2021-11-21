@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MyButton } from './Button';
-import { Button } from 'semantic-ui-react';
+import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -38,26 +37,24 @@ function Navbar() {
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
                             <Link to='/' className = 'nav-links' onClick={closeMobileMenu}>
-                                About
+                                Dashboard
                             </Link>
                         </li>
                         <li className='nav-item'>
                             <Link to='/contact-us' className = 'nav-links' onClick={closeMobileMenu}>
-                                Contact Us
+                                Device Input
                             </Link>
                         </li>
                 
                         <li className='nav-item'>
                             <Link to='/register' className = 'nav-links' onClick={closeMobileMenu}>
-                                SIGN UP    
+                                Friends   
                             </Link>
                         </li>
                     
                     
                     </ul>
-                    {button && <MyButton buttonStyle='btn--outline'>SIGN IN</MyButton>}
-                    <Button as={Link} to='/register'>SIGN UP</Button>
-                    <Button as={Link} to='/devices'>DEVICES</Button>
+                    {button && <Button buttonStyle='btn--outline'>LOG OUT</Button>}
                 </div>
             </nav>
         </>
