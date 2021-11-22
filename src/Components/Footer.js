@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
+    <footer className='footer--pin'>
     <div className='footer-container'>
         <p className='footer-subscription-heading'>
           Save Energy with ElectrifyU!!
@@ -23,6 +24,7 @@ function Footer() {
         </div>
       </section>
     </div>
+    </footer>
   );
 }
 

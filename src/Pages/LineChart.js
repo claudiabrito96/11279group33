@@ -1,5 +1,6 @@
 import React from 'react'
-import { Line, defaults } from 'react-chartjs-2'
+import { Line, defaults} from 'react-chartjs-2'
+import { ResponsiveContainer } from 'recharts';
 
 
 function LineChart() {
@@ -18,7 +19,8 @@ function LineChart() {
       ]
     }
 
-    return <Line data= {data} />
+    return <ResponsiveContainer width="95%" height={400}><Line data= {data} /></ResponsiveContainer>
+
 
 }
 

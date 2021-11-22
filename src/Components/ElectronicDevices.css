@@ -6,11 +6,13 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
+  min-height: calc(100vh - 221px);
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  min-height: calc(100vh - 221px);
 }
 
 .dropdown-content {
@@ -20,6 +22,7 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  min-height: calc(100vh - 221px);
 }
 
 .dropdown-content a {
@@ -27,12 +30,14 @@
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  min-height: calc(100vh - 221px);
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 .dropdown:hover .dropdown-content {
   display: block;
+  min-height: calc(100vh - 221px);
 }
 
 .dropdown:hover .dropbtn {
