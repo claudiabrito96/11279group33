@@ -1,0 +1,78 @@
+[
+    {
+      "key": "",
+      "value": "",
+      "points": 0
+    },
+    {
+      "key": "A/C (4-ton) - 4 kWh",
+      "value": "A/C (4-ton) - 4 kWh",
+      "points": 4
+    },
+    {
+      "key": "Cellphone - 1 kWh",
+      "value": "Cellphone - 1 kWh",
+      "points": 1
+    },
+    {
+      "key": "Desktop Computer Sleep Mode - 30 kWh",
+      "value": "Desktop Computer Sleep Mode - 30 kWh",
+      "points": 30
+    },
+    {
+      "key": "Desktop Computer Active Mode - 150 kWh",
+      "value": "Desktop Computer Active Mode - 150 kWh",
+      "points": 150
+    },
+    {
+      "key": "Dryer - 3 kWh",
+      "value": "Dryer - 3 kWh",
+      "points": 3
+    },
+    {
+      "key": "Laptop - 72 kWh",
+      "value": "Laptop - 72 kWh",
+      "points": 72
+    },
+    {
+      "key": "Microwave - 0.3 kWh",
+      "value": "Microwave - 0.3 kWh",
+      "points": 0.3
+    },
+    {
+      "key": "Oven - 2.3 kWh",
+      "value": "Oven - 2.3 kWh",
+      "points": 2.3
+    },
+    {
+      "key": "Refrigerator - 0.3 kWh",
+      "value": "Refrigerator - 0.3 kWh",
+      "points": 0.3
+    },
+    {
+      "key": "Room Lights (1 room) - 0.1 kWh",
+      "value": "Room Lights (1 room) - 0.1 kWh",
+      "points": 0.1
+    },
+    {
+        "key": "Stovetop - 3 kWh",
+        "value": "Stovetop - 3 kWh",
+        "points": 3
+      },
+      {
+        "key": "Television - 0.3 kWh",
+        "value": "Television - 0.3 kWh",
+        "points": 0.3
+      },
+      {
+        "key": "Vacuum - 1.4 kWh",
+        "value": "Vacuum - 1.4 kWh",
+        "points": 1.4
+      },
+      {
+        "key": "Washing Machine - 0.3 kWh",
+        "value": "Washing Machine - 0.3 kWh",
+        "points": 0.3
+      }
+  ]
+  
